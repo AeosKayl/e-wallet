@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -28,6 +31,196 @@
   color: #61dafb;
 }
 
+.add-new-card-lnk {
+  margin: 50px 0px;
+}
+
+.activeCard,
+.inactiveCards {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  height: 165px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: rgb(158, 158, 158) 5px 5px 5px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card-images {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.card-type,
+.logo,
+.chip {
+  display: flex;
+  width: 20%;
+  height: 30px;
+}
+.card-type > p {
+  align-self: flex-end;
+}
+.card-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.holder {
+  text-align: start;
+}
+.validity-info {
+  text-align: center;
+}
+
+.card-number {
+  width: 100%;
+}
+
+.card-number > p:nth-of-type(1) {
+  font-style: oblique;
+}
+.card-number > p:nth-of-type(2) {
+  width: 100%;
+  font-weight: bold;
+}
+
+p.label {
+  font-size: smaller;
+}
+
+/* .hidden-buttons {
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.hidden-buttons > button {
+  background-color: transparent;
+} */
+/* .inactiveCards > .card > button {
+  position: relative;
+} */
+
+.inactiveCards > .card:hover > .hidden-buttons {
+  display: block;
+}
+
+/* .hidden-buttons {
+  position: absolute;
+  display: none;
+  left: 350px;
+} */
+
+.hidden-buttons > button {
+  background-color: transparent;
+  border: none;
+}
+
+.hidden-buttons > button:hover {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 20px;
+  background-color: rgb(240, 238, 238);
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  border-radius: 15px;
+  box-shadow: rgb(158, 158, 158) 5px 5px 5px;
+}
+
+.vendor-input,
+.card-number-input,
+.card-holder-input,
+.validity-input,
+.cvc-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+button,
+input,
+select,
+option {
+  padding: 8px 8px;
+  color: rgb(30, 30, 45);
+}
+
+.Barclays {
+  background: rgb(246, 235, 235);
+  background: linear-gradient(
+    149deg,
+    rgba(246, 235, 235, 0.9915675742953431) 0%,
+    rgba(32, 199, 244, 1) 100%
+  );
+}
+
+.American {
+  background: rgb(246, 235, 235);
+  background: linear-gradient(
+    149deg,
+    rgba(246, 235, 235, 0.9915675742953431) 0%,
+    rgba(184, 194, 204, 1) 100%
+  );
+}
+
+.Visa {
+  background: rgb(246, 235, 235);
+  background: linear-gradient(
+    149deg,
+    rgba(246, 235, 235, 0.9915675742953431) 0%,
+    rgba(235, 151, 32, 1) 100%
+  );
+}
+
+.Mastercard {
+  background: rgb(246, 235, 235);
+  background: linear-gradient(
+    149deg,
+    rgba(246, 235, 235, 0.9915675742953431) 0%,
+    rgba(228, 50, 23, 1) 100%
+  );
+}
+
+.warning-msg {
+  margin-top: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  height: 265px;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: rgb(158, 158, 158) 5px 5px 5px;
+  align-items: center;
+  margin-top: 50px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
